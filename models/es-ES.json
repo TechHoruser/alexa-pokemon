@@ -1,0 +1,255 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "pokeguía",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "ayuda",
+            "qué puedes hacer",
+            "ayúdame"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "adiós",
+            "cerrar",
+            "cerrar pokeguía"
+          ]
+        },
+        {
+          "name": "SaludoIntent",
+          "samples": [
+            "hola"
+          ]
+        },
+        {
+          "name": "NumeroPokemonIntent",
+          "samples": [
+            "qué pokemon es el número {numeroPokemon}",
+            "qué pokemon es el {numeroPokemon}"
+          ],
+          "slots":[
+            {
+              "name": "numeroPokemon",
+              "type": "AMAZON.NUMBER",
+              "samples": []
+            }
+          ]
+        },
+        {
+          "name": "TipoPokemonIntent",
+          "samples": [
+            "de qué tipo es {nombrePokemon}"
+          ],
+          "slots":[
+            {
+              "name": "nombrePokemon",
+              "type": "POKEMON_NAME",
+              "samples": []
+            }
+          ]
+        },
+        {
+          "name": "InfoPokemonIntent",
+          "samples": [
+            "información de {nombrePokemon}",
+            "info de {nombrePokemon}",
+            "info del pokemon {nombrePokemon}",
+            "info de pokemon {nombrePokemon}",
+            "cuéntame algo de {nombrePokemon}",
+            "dame información de {nombrePokemon}"
+          ],
+          "slots":[
+            {
+              "name": "nombrePokemon",
+              "type": "POKEMON_NAME",
+              "samples": []
+            }
+          ]
+        },
+        {
+          "name": "EvolucionPokemonIntent",
+          "samples": [
+            "evolución de {nombrePokemon}",
+            "a que nivel evoluciona {nombrePokemon}",
+            "evoluciona {nombrePokemon}",
+            "en qué evoluciona {nombrePokemon}",
+            "en qué pokemon evoluciona {nombrePokemon}"
+          ],
+          "slots":[
+            {
+              "name": "nombrePokemon",
+              "type": "POKEMON_NAME",
+              "samples": []
+            }
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "POKEMON_NAME",
+          "values": [
+            {"name": {"value": "Bulbasaur"}},
+            {"name": {"value": "Ivysaur"}},
+            {"name": {"value": "Venusaur"}},
+            {"name": {"value": "Charmander"}},
+            {"name": {"value": "Charmeleon"}},
+            {"name": {"value": "Charizard"}},
+            {"name": {"value": "Squirtle"}},
+            {"name": {"value": "Wartortle"}},
+            {"name": {"value": "Blastoise"}},
+            {"name": {"value": "Caterpie"}},
+            {"name": {"value": "Metapod"}},
+            {"name": {"value": "Butterfree"}},
+            {"name": {"value": "Weedle"}},
+            {"name": {"value": "Kakuna"}},
+            {"name": {"value": "Beedrill"}},
+            {"name": {"value": "Pidgey"}},
+            {"name": {"value": "Pidgeotto"}},
+            {"name": {"value": "Pidgeot"}},
+            {"name": {"value": "Rattata"}},
+            {"name": {"value": "Raticate"}},
+            {"name": {"value": "Spearow"}},
+            {"name": {"value": "Fearow"}},
+            {"name": {"value": "Ekans"}},
+            {"name": {"value": "Arbok"}},
+            {"name": {"value": "Pikachu"}},
+            {"name": {"value": "Raichu"}},
+            {"name": {"value": "Sandshrew"}},
+            {"name": {"value": "Sandslash"}},
+            {"name": {"value": "Nidoran♀"}},
+            {"name": {"value": "Nidorina"}},
+            {"name": {"value": "Nidoqueen"}},
+            {"name": {"value": "Nidoran♂"}},
+            {"name": {"value": "Nidorino"}},
+            {"name": {"value": "Nidoking"}},
+            {"name": {"value": "Clefairy"}},
+            {"name": {"value": "Clefable"}},
+            {"name": {"value": "Vulpix"}},
+            {"name": {"value": "Ninetales"}},
+            {"name": {"value": "Jigglypuff"}},
+            {"name": {"value": "Wigglytuff"}},
+            {"name": {"value": "Zubat"}},
+            {"name": {"value": "Golbat"}},
+            {"name": {"value": "Oddish"}},
+            {"name": {"value": "Gloom"}},
+            {"name": {"value": "Vileplume"}},
+            {"name": {"value": "Paras"}},
+            {"name": {"value": "Parasect"}},
+            {"name": {"value": "Venonat"}},
+            {"name": {"value": "Venomoth"}},
+            {"name": {"value": "Diglett"}},
+            {"name": {"value": "Dugtrio"}},
+            {"name": {"value": "Meowth"}},
+            {"name": {"value": "Persian"}},
+            {"name": {"value": "Psyduck"}},
+            {"name": {"value": "Golduck"}},
+            {"name": {"value": "Mankey"}},
+            {"name": {"value": "Primeape"}},
+            {"name": {"value": "Growlithe"}},
+            {"name": {"value": "Arcanine"}},
+            {"name": {"value": "Poliwag"}},
+            {"name": {"value": "Poliwhirl"}},
+            {"name": {"value": "Poliwrath"}},
+            {"name": {"value": "Abra"}},
+            {"name": {"value": "Kadabra"}},
+            {"name": {"value": "Alakazam"}},
+            {"name": {"value": "Machop"}},
+            {"name": {"value": "Machoke"}},
+            {"name": {"value": "Machamp"}},
+            {"name": {"value": "Bellsprout"}},
+            {"name": {"value": "Weepinbell"}},
+            {"name": {"value": "Victreebel"}},
+            {"name": {"value": "Tentacool"}},
+            {"name": {"value": "Tentacruel"}},
+            {"name": {"value": "Geodude"}},
+            {"name": {"value": "Graveler"}},
+            {"name": {"value": "Golem"}},
+            {"name": {"value": "Ponyta"}},
+            {"name": {"value": "Rapidash"}},
+            {"name": {"value": "Slowpoke"}},
+            {"name": {"value": "Slowbro"}},
+            {"name": {"value": "Magnemite"}},
+            {"name": {"value": "Magneton"}},
+            {"name": {"value": "Farfetch"}},
+            {"name": {"value": "Doduo"}},
+            {"name": {"value": "Dodrio"}},
+            {"name": {"value": "Seel"}},
+            {"name": {"value": "Dewgong"}},
+            {"name": {"value": "Grimer"}},
+            {"name": {"value": "Muk"}},
+            {"name": {"value": "Shellder"}},
+            {"name": {"value": "Cloyster"}},
+            {"name": {"value": "Gastly"}},
+            {"name": {"value": "Haunter"}},
+            {"name": {"value": "Gengar"}},
+            {"name": {"value": "Onix"}},
+            {"name": {"value": "Drowzee"}},
+            {"name": {"value": "Hypno"}},
+            {"name": {"value": "Krabby"}},
+            {"name": {"value": "Kingler"}},
+            {"name": {"value": "Voltorb"}},
+            {"name": {"value": "Electrode"}},
+            {"name": {"value": "Exeggcute"}},
+            {"name": {"value": "Exeggutor"}},
+            {"name": {"value": "Cubone"}},
+            {"name": {"value": "Marowak"}},
+            {"name": {"value": "Hitmonlee"}},
+            {"name": {"value": "Hitmonchan"}},
+            {"name": {"value": "Lickitung"}},
+            {"name": {"value": "Koffing"}},
+            {"name": {"value": "Weezing"}},
+            {"name": {"value": "Rhyhorn"}},
+            {"name": {"value": "Rhydon"}},
+            {"name": {"value": "Chansey"}},
+            {"name": {"value": "Tangela"}},
+            {"name": {"value": "Kangaskhan"}},
+            {"name": {"value": "Horsea"}},
+            {"name": {"value": "Seadra"}},
+            {"name": {"value": "Goldeen"}},
+            {"name": {"value": "Seaking"}},
+            {"name": {"value": "Staryu"}},
+            {"name": {"value": "Starmie"}},
+            {"name": {"value": "Mr. Mime"}},
+            {"name": {"value": "Scyther"}},
+            {"name": {"value": "Jynx"}},
+            {"name": {"value": "Electabuzz"}},
+            {"name": {"value": "Magmar"}},
+            {"name": {"value": "Pinsir"}},
+            {"name": {"value": "Tauros"}},
+            {"name": {"value": "Magikarp"}},
+            {"name": {"value": "Gyarados"}},
+            {"name": {"value": "Lapras"}},
+            {"name": {"value": "Ditto"}},
+            {"name": {"value": "Eevee"}},
+            {"name": {"value": "Vaporeon"}},
+            {"name": {"value": "Jolteon"}},
+            {"name": {"value": "Flareon"}},
+            {"name": {"value": "Porygon"}},
+            {"name": {"value": "Omanyte"}},
+            {"name": {"value": "Omastar"}},
+            {"name": {"value": "Kabuto"}},
+            {"name": {"value": "Kabutops"}},
+            {"name": {"value": "Aerodactyl"}},
+            {"name": {"value": "Snorlax"}},
+            {"name": {"value": "Articuno"}},
+            {"name": {"value": "Zapdos"}},
+            {"name": {"value": "Moltres"}},
+            {"name": {"value": "Dratini"}},
+            {"name": {"value": "Dragonair"}},
+            {"name": {"value": "Dragonite"}},
+            {"name": {"value": "Mewtwo"}},
+            {"name": {"value": "Mew"}}
+          ]
+        }
+      ]
+    }
+  }
+}

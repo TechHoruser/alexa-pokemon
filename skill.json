@@ -1,0 +1,29 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "es-ES": {
+          "summary": "Descripción Corta",
+          "examplePhrases": [
+            "Alexa abre pokeguía"
+          ],
+          "name": "pokeguia",
+          "description": "Descripción completa"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Ejemplo de instrucciones de testing.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda/custom",
+          "uri": "ask-custom-hola-skill-default"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}
